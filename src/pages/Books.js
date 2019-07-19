@@ -22,7 +22,7 @@ class Books extends Component {
   loadBooks = () => {
     API.getBooks()
       .then(res =>{
-        this.setState({ books: res.data})
+        this.setState({ books: res.data.data.books})
           console.log(this.state)
       }
       )
